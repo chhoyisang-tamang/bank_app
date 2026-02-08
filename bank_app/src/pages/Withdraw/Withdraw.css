@@ -1,0 +1,240 @@
+.withdraw-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.withdraw-card {
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.12);
+    padding: 30px;
+    background: white;
+    border: 1px solid #DCFCE7;
+    transition: all 0.3s ease;
+}
+
+.withdraw-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.withdraw-header h1 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+}
+
+.withdraw-header p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.balance-row {
+    margin-bottom: 30px;
+}
+
+.balance-card {
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #f0f0f0;
+}
+
+.steps-section {
+    margin-bottom: 30px;
+}
+
+.form-section {
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    min-height: 150px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+}
+
+.amount-input {
+    margin-bottom: 12px;
+}
+
+.method-select {
+    margin-bottom: 16px;
+}
+
+.method-description {
+    padding: 16px;
+    background: linear-gradient(135deg, #F0FDF4 0%, #ECFDF5 100%);
+    border: 2px solid #10B981;
+    border-radius: 8px;
+    margin-top: 12px;
+    transition: all 0.3s ease;
+}
+
+.method-description:hover {
+    border-color: #059669;
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.1);
+}
+
+.method-description p {
+    margin: 0;
+    color: #047857;
+    font-size: 13px;
+    line-height: 1.6;
+    font-weight: 500;
+}
+
+.info-text {
+    font-size: 12px;
+    color: #999;
+    margin-top: 8px;
+}
+
+.review-section {
+    padding: 20px 0;
+}
+
+.review-section h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 18px;
+}
+
+.review-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.review-item.total {
+    font-weight: 600;
+    font-size: 16px;
+    border-bottom: none;
+}
+
+.review-value {
+    font-weight: 600;
+    color: #2196f3;
+}
+
+.review-divider {
+    height: 2px;
+    background-color: #f0f0f0;
+    margin: 16px 0;
+}
+
+.success-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.success-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+
+.success-section h3 {
+    font-size: 24px;
+    color: #4caf50;
+    margin: 0;
+}
+
+.success-section p {
+    color: #666;
+    margin-top: 8px;
+}
+
+.success-details {
+    background-color: #f0f8f4;
+    border: 1px solid #4caf50;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: left;
+    font-size: 13px;
+}
+
+.success-details p {
+    margin: 8px 0;
+    color: #333;
+}
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    justify-content: flex-end;
+    margin-top: 30px;
+}
+
+.button-group button {
+    min-width: 120px;
+}
+
+.back-btn {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.back-btn:hover {
+    background-color: #e0e0e0;
+}
+
+.next-btn,
+.complete-btn {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .withdraw-container {
+        padding: 12px;
+    }
+
+    .withdraw-card {
+        padding: 20px;
+    }
+
+    .withdraw-header h1 {
+        font-size: 22px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .button-group button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .withdraw-container {
+        padding: 8px;
+    }
+
+    .withdraw-card {
+        padding: 16px;
+    }
+
+    .withdraw-header h1 {
+        font-size: 18px;
+    }
+
+    .form-section {
+        padding: 12px;
+    }
+
+    .review-item {
+        padding: 8px 0;
+        font-size: 12px;
+    }
+}

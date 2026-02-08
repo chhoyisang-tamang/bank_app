@@ -1,0 +1,281 @@
+.home-container {
+    padding: 20px;
+    background: linear-gradient(135deg, #ffffff 0%, #F0FDF4 100%);
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    margin-bottom: 30px;
+}
+
+.dashboard-header h1 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+}
+
+.dashboard-header p {
+    color: #666;
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+/* Accounts Section */
+.accounts-section {
+    margin-bottom: 24px;
+}
+
+.account-card {
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(16, 185, 129, 0.12);
+    padding: 24px;
+    background: white;
+    border: 1px solid #DCFCE7;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+}
+
+.account-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #10B981, #059669);
+}
+
+.account-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba(16, 185, 129, 0.18);
+    border-color: #A7F3D0;
+}
+
+.checking-account {
+    border-left: 5px solid #10B981;
+}
+
+.savings-account {
+    border-left: 4px solid #4caf50;
+}
+
+.primary-account {
+    border-left: 5px solid #10B981;
+    background: linear-gradient(135deg, #ffffff 0%, #f0fdf4 100%);
+}
+
+.account-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.account-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.account-number {
+    background-color: #f0f0f0;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: #666;
+}
+
+.balance-display {
+    margin: 16px 0;
+}
+
+.balance-display p {
+    margin: 0;
+    color: #999;
+    font-size: 12px;
+}
+
+.balance-display h2 {
+    margin: 8px 0 0 0;
+    font-size: 32px;
+    color: #10B981;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.account-footer {
+    text-align: right;
+    padding-top: 12px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.account-footer small {
+    color: #999;
+}
+
+/* Statistics Section */
+.stats-row {
+    margin-bottom: 24px;
+}
+
+.stat-card {
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(16, 185, 129, 0.08);
+    padding: 24px;
+    background: white;
+    transition: all 0.3s ease;
+    border: 1px solid #DCFCE7;
+    position: relative;
+}
+
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(16, 185, 129, 0.15);
+    border-color: #A7F3D0;
+}
+
+/* Actions Section */
+.actions-card {
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(16, 185, 129, 0.06);
+    padding: 20px;
+    background: white;
+    margin-bottom: 24px;
+    border: 1px solid #D1FAE5;
+}
+
+.actions-card h3 {
+    margin: 0;
+    color: #333;
+}
+
+.actions-row {
+    margin-bottom: 0;
+}
+
+.action-btn {
+    font-weight: 600;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.action-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Transactions Section */
+.transactions-card {
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background: white;
+    border: none;
+}
+
+.transactions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.transactions-header h3 {
+    margin: 0;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-container {
+        padding: 12px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 22px;
+    }
+
+    .account-card {
+        padding: 16px;
+        min-height: 160px;
+    }
+
+    .balance-display h2 {
+        font-size: 24px;
+    }
+
+    .action-btn {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .transactions-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .transactions-header select {
+        width: 100% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-container {
+        padding: 8px;
+    }
+
+    .dashboard-header h1 {
+        font-size: 18px;
+    }
+
+    .dashboard-header p {
+        font-size: 12px;
+    }
+
+    .account-card {
+        padding: 12px;
+        min-height: 140px;
+    }
+
+    .account-header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .balance-display h2 {
+        font-size: 20px;
+    }
+
+    .stat-card {
+        padding: 12px;
+    }
+
+    .action-btn {
+        height: 36px;
+        font-size: 11px;
+    }
+
+    .actions-card h3 {
+        font-size: 14px;
+    }
+
+    .transactions-card {
+        padding: 12px;
+    }
+
+    .transactions-header h3 {
+        font-size: 14px;
+    }
+}
